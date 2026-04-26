@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-yellow-50 text-slate-800 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom styles for the thick borders and playful shadows */
+.vibrant-border {
+  @apply border-b-4 transition-all active:border-b-0 active:translate-y-1;
+}
+
+.thick-border-red {
+  @apply border-red-800 border-b-[12px] active:border-b-0 active:translate-y-2;
+}
+
